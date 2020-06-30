@@ -1,0 +1,3 @@
+G. Papachristou, [Online]. Available: https://github.com/ggeop/JobRecommendation-Engine.
+
+ Z. Wang, S. Sugaya, and D. P. T. Nguyen, “Salary Prediction using Bidirectional-GRU-CNN Model,” Assoc. Nat. Lang. Process., 2019. 
