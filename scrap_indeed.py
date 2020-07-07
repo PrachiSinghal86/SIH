@@ -9,7 +9,7 @@ df = pd.DataFrame(columns=["Title", "Location", "Company", "Salary", "Sponsored"
 
 for i in range(0, 1200,10):
     driver.get('https://www.indeed.co.in/jobs?q=system+administrator&l=India&start=' + str(i))
-    jobs = []
+
     driver.implicitly_wait(4)
 
     for job in driver.find_elements_by_class_name('result'):
