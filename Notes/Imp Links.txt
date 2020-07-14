@@ -1,0 +1,5 @@
+Skill Assessment
+https://radiusofcircle.blogspot.com/2016/03/making-quiz-website-with-python.html
+
+Project
+https://github.com/krutika731/Salary-and-Job-title-prediction-from-scraped-job-data
