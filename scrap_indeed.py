@@ -7,8 +7,8 @@ driver = webdriver.Chrome("./chromedriver")
 
 df = pd.DataFrame(columns=["Title", "Location", "Company", "Salary", "Sponsored","Description"])
 
-for i in range(0, 3100,10):
-    driver.get('https://www.indeed.co.in/jobs?q=software%20developer&l=India&ts=1594028914220&rs=1&fromage=last&start=' + str(i))
+for i in range(0, 1000,10):
+    driver.get('https://www.indeed.co.in/jobs?q=programmer&l=India&ts=1593876917927&rs=1&fromage=last&start=' + str(i))
 
     driver.implicitly_wait(4)
 
@@ -60,4 +60,4 @@ for i in range(0, 3100,10):
 
 
 
-df.to_csv("sde new.csv", index=False)
+df.to_csv("prog new.csv", index=False)
