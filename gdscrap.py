@@ -4,14 +4,14 @@ import time
 import pandas as pd
 
 
-def get_jobs(keyword, num_jobs, verbose):
+def get_jobs(num_jobs, verbose):
     '''Gathers jobs as a dataframe, scraped from Glassdoor'''
 
     # Initializing the webdriver
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(executable_path="./chromedriver", options=options)
     driver.set_window_size(1120, 1000)
-    url = 'https://www.glassdoor.com/Job/jobs.htm?sc.keyword="' + keyword + '"&locT=C&locId=1147401&locKeyword=San%20Francisco,%20CA&jobType=all&fromAge=-1&minSalary=0&includeNoSalaryJobs=true&radius=100&cityId=-1&minRating=0.0&industryId=-1&sgocId=-1&seniorityType=all&companyId=-1&employerSizes=0&applicationType=0&remoteWorkType=0'
+    url = 'https://www.glassdoor.co.in/Job/india-system-administrator-jobs-SRCH_IL.0,5_IN115_KO6,26.htm'
     driver.get(url)
     jobs = []
     while len(jobs) < num_jobs:  # If true, should be still looking for new jobs.
@@ -67,5 +67,5 @@ def get_jobs(keyword, num_jobs, verbose):
                                                                                                              len(jobs)))
             break
     return pd.DataFrame(jobs)
-df = get_jobs("web developer",5, False)
-df.to_csv(r'D:\web_developer_output.csv', index = False)
+df = get_jobs(150, False)
+df.to_csv('SAglass.csv', index = False)
