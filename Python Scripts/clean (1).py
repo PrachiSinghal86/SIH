@@ -3,8 +3,8 @@ import re
 
 missing_val=['None']
 
-df=pd.read_csv("C:/Users/hp1/Documents/sih/datascientist2.csv", na_values=missing_val)
-df.drop(columns=['Sponsored'],inplace=True)
+df=pd.read_csv("Final.csv", na_values=missing_val)
+
 
 #sal=list(df['Salary'])
 #x=re.search("^â‚",sal)
@@ -88,5 +88,5 @@ df['Salary']=df['Salary'].apply(solve)
 #for i in df['Salary']:
  #   i=solve(i)
 
-df.to_csv("C:/Users/hp1/Documents/sih/datascientistnew.csv")
+df.to_csv("saltrial.csv")
     
