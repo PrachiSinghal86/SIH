@@ -11,7 +11,7 @@ def get_jobs(num_jobs, verbose):
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(executable_path="./chromedriver", options=options)
     driver.set_window_size(1120, 1000)
-    url = 'https://www.glassdoor.co.in/Job/india-system-administrator-jobs-SRCH_IL.0,5_IN115_KO6,26.htm'
+    url = 'https://www.glassdoor.co.in/Job/india-ios-developer-jobs-SRCH_IL.0,5_IN115_KO6,19.htm'
     driver.get(url)
     jobs = []
     while len(jobs) < num_jobs:  # If true, should be still looking for new jobs.
@@ -67,5 +67,5 @@ def get_jobs(num_jobs, verbose):
                                                                                                              len(jobs)))
             break
     return pd.DataFrame(jobs)
-df = get_jobs(150, False)
-df.to_csv('SAglass.csv', index = False)
+df = get_jobs(250, False)
+df.to_csv('ios.csv', index = False)
