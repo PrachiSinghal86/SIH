@@ -37,7 +37,7 @@ custom_stop_words = ['immidiate', 'job','senior','looking','title','salary','jun
                      'expertise','improve','datadriven','receive','data','set','standards','hill','prominent','woolworths',\
                      'highly','group','headquarters','wa','Pune','client','medical','center','seer','already',\
                      'technologyabout', 'youbechlors']
-df = pd.read_csv("Comp Data_uni.csv")
+df = pd.read_csv("glass_uni1.csv")
 
 def res(text):
   s=[]
@@ -96,5 +96,5 @@ def clean_loc(text):
   return text
 df['Location']=df['Location'].apply(lambda x: clean_loc(x))
 #File after cleaning decription andd have none salary
-df.to_csv('cleaneddata.csv')
+df.to_csv('cleanedglassdata.csv')
 
