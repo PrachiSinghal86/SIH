@@ -49,6 +49,7 @@ for i in range(0, 200,10):
 
 
             driver.execute_script("arguments[0].click();",sum_div)
+
             job_desc=driver.find_element_by_id('vjs-desc').text
         except:
             job_desc=soup.find(class_="summary").text.replace("\n", "").strip()
