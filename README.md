@@ -6,12 +6,14 @@
 * __Duju RNN Model__
 
 ## Tasks Pending
-- [] Full datasets clean
+
 - [] Script for data Visulization
 - [] Making questions for test
-- [] Recruiter Front End
 - [] 
 
 ## Tasks Done
 - [x] Sample Data Clean
 - [x] Login Page 
+- [x] Cleaned Data
+- [x] RNN Model done
+- [x] Recruiter front end
